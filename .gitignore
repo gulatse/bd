@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+run.log
+*.bak
+run.txt
