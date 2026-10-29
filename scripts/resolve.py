@@ -443,6 +443,60 @@ def write_outputs(outdir: str, domain: str, dns_results, records, geo, nodes, na
     with open(os.path.join(outdir, "clash-proxies.yaml"), "w", encoding="utf-8") as fh:
         fh.write("\n".join(lines) + "\n")
 
+    # 完整可跑的 Clash / mihomo 配置
+    cproxy_lines: list[str] = []
+    cnames: list[str] = []
+    for n in nodes:
+        if n.get("alive") is False:
+            continue
+        name = f"{n['region']} {n['isp']}".strip()
+        cnames.append(name)
+        cproxy_lines += [
+            f"  - name: \"{name}\"",
+            "    type: http",
+            f"    server: {n['ip']}",
+            "    port: 443",
+            "    headers:",
+            f"      Host: \"{BAIDU_HOST_HEADER}\"",
+            f"      X-T5-Auth: \"{BAIDU_AUTH}\"",
+            f"      User-Agent: \"{BAIDU_UA}\"",
+        ]
+    group_members = [f'      - "{c}"' for c in cnames] or ["      - DIRECT"]
+    clash = [
+        "mixed-port: 2080",
+        "allow-lan: false",
+        "mode: rule",
+        "log-level: info",
+        "ipv6: false",
+        "external-controller: 127.0.0.1:19090",
+        "",
+        "dns:",
+        "  enable: true",
+        "  ipv6: false",
+        "  enhanced-mode: redir-host",
+        "  default-nameserver:",
+        "    - 223.5.5.5",
+        "    - 119.29.29.29",
+        "  nameserver:",
+        "    - 223.5.5.5",
+        "    - 119.29.29.29",
+        "",
+        "proxies:",
+        *cproxy_lines,
+        "",
+        "proxy-groups:",
+        "  - name: PROXY",
+        "    type: select",
+        "    proxies:",
+        *group_members,
+        "",
+        "rules:",
+        "  - MATCH,PROXY",
+        "",
+    ]
+    with open(os.path.join(outdir, "clash-config.yaml"), "w", encoding="utf-8") as fh:
+        fh.write("\n".join(clash))
+
     # markdown 表格
     alive_cnt = sum(1 for n in nodes if n.get("alive"))
     md = [

@@ -38,8 +38,22 @@ baidu-direct/
     ├── nodes.md                    # 人看的表格（含存活标记）
     ├── singbox-outbounds.json      # sing-box 出站数组
     ├── singbox-config.json         # 完整可跑的 sing-box 配置
-    └── clash-proxies.yaml          # Clash 代理节点
+    ├── clash-config.yaml           # 完整可跑的 Clash / mihomo 配置
+    └── clash-proxies.yaml          # 只有 Clash 代理节点
 ```
+
+## 三种核心怎么选
+
+v2rayN 支持一堆核心，但这套玩法只有两个能原生用：
+
+| 核心 | 行不行 | 怎么用 |
+|---|---|---|
+| **mihomo**（Clash.Meta） | ✅ | 自定义配置 → 选 `output/clash-config.yaml`。v2rayN 只覆盖端口/控制器，`proxies` 段（含 `headers`）原样保留 |
+| **sing-box** | ✅ | 自定义配置 → 选 `output/singbox-config.json`；或「添加自定义远端站」只给 `singbox-outbounds.json` 里的那一条 |
+| **Xray（v2ray）** | ❌ | Go 的 `http.Request.Write` 会丢掉 `headers["Host"]`，发出去的是 `Host: <目标地址>`，百度边缘直接 403。GUI 的「HTTP 服务器」类型也没有 headers 字段 |
+
+Xray 要用只能绕：串一个 sing-box / mihomo，或者用中间改写 shim。
+（老的 Dreamacro 开源 Clash 内核也不支持 `headers`，mihomo 才支持。）
 
 ## 输出
 
