@@ -1,8 +1,8 @@
 {
   "domain": "cloudnproxy.n.shifen.com",
-  "generated_at": "2026-10-30T03:04:41.878867+08:00",
+  "generated_at": "2026-11-02T06:51:27.768700+08:00",
   "dns_total": 125,
-  "dns_ok": 30,
+  "dns_ok": 31,
   "unique_a_records": 14,
   "nodes": [
     {
@@ -223,6 +223,7 @@
         "216.146.35.35",
         "219.250.36.130",
         "4.2.2.1",
+        "61.132.163.68",
         "64.6.64.6",
         "9.9.9.9",
         "1.1.1.1",
@@ -239,6 +240,7 @@
         "216.146.35.35",
         "219.250.36.130",
         "4.2.2.1",
+        "61.132.163.68",
         "64.6.64.6",
         "9.9.9.9"
       ],
@@ -563,6 +565,7 @@
         "216.146.35.35",
         "219.250.36.130",
         "4.2.2.1",
+        "61.132.163.68",
         "64.6.64.6",
         "9.9.9.9"
       ]
@@ -586,6 +589,7 @@
         "216.146.35.35",
         "219.250.36.130",
         "4.2.2.1",
+        "61.132.163.68",
         "64.6.64.6",
         "9.9.9.9"
       ]
@@ -722,7 +726,7 @@
         "36.155.169.188"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 374,
+      "ms": 365,
       "error": ""
     },
     {
@@ -741,7 +745,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3106,
+      "ms": 3113,
       "error": "超时"
     },
     {
@@ -752,7 +756,7 @@
         "110.242.70.69"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 145,
+      "ms": 43,
       "error": ""
     },
     {
@@ -760,7 +764,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3109,
+      "ms": 3111,
       "error": "超时"
     },
     {
@@ -783,7 +787,7 @@
         "36.155.169.188"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 1966,
+      "ms": 180,
       "error": ""
     },
     {
@@ -791,7 +795,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3106,
+      "ms": 3112,
       "error": "超时"
     },
     {
@@ -802,7 +806,7 @@
         "110.242.70.69"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 40,
+      "ms": 39,
       "error": ""
     },
     {
@@ -813,7 +817,7 @@
         "110.242.70.69"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 45,
+      "ms": 30,
       "error": ""
     },
     {
@@ -824,7 +828,7 @@
         "110.242.70.69"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 98,
+      "ms": 54,
       "error": ""
     },
     {
@@ -832,7 +836,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3100,
+      "ms": 3107,
       "error": "超时"
     },
     {
@@ -840,7 +844,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 52,
+      "ms": 51,
       "error": "NoNameservers: All nameservers failed to answer the query cloudnproxy.n.shifen.com. IN A: Server Do53:122.112.208.1@53 answered REFUSED"
     },
     {
@@ -863,7 +867,7 @@
         "36.155.169.188"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 611,
+      "ms": 579,
       "error": ""
     },
     {
@@ -874,7 +878,7 @@
         "110.242.70.69"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 25,
+      "ms": 26,
       "error": ""
     },
     {
@@ -885,7 +889,7 @@
         "110.242.70.69"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 86,
+      "ms": 46,
       "error": ""
     },
     {
@@ -908,7 +912,7 @@
         "36.155.169.188"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 634,
+      "ms": 681,
       "error": ""
     },
     {
@@ -931,7 +935,7 @@
         "36.155.169.188"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 717,
+      "ms": 362,
       "error": ""
     },
     {
@@ -954,7 +958,7 @@
         "36.155.169.188"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 209,
+      "ms": 122,
       "error": ""
     },
     {
@@ -977,7 +981,7 @@
         "36.155.169.188"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 182,
+      "ms": 161,
       "error": ""
     },
     {
@@ -988,7 +992,7 @@
         "110.242.70.69"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 41,
+      "ms": 34,
       "error": ""
     },
     {
@@ -999,7 +1003,7 @@
         "110.242.70.69"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 132,
+      "ms": 139,
       "error": ""
     },
     {
@@ -1007,7 +1011,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3107,
+      "ms": 3106,
       "error": "超时"
     },
     {
@@ -1053,7 +1057,7 @@
         "36.155.169.188"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 402,
+      "ms": 181,
       "error": ""
     },
     {
@@ -1061,7 +1065,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3102,
+      "ms": 3101,
       "error": "超时"
     },
     {
@@ -1069,7 +1073,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3108,
+      "ms": 3107,
       "error": "超时"
     },
     {
@@ -1077,7 +1081,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3101,
+      "ms": 3103,
       "error": "超时"
     },
     {
@@ -1085,7 +1089,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3112,
+      "ms": 3111,
       "error": "超时"
     },
     {
@@ -1093,7 +1097,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3110,
+      "ms": 3112,
       "error": "超时"
     },
     {
@@ -1101,7 +1105,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3114,
+      "ms": 3104,
       "error": "超时"
     },
     {
@@ -1109,7 +1113,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3103,
+      "ms": 3108,
       "error": "超时"
     },
     {
@@ -1117,7 +1121,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3101,
+      "ms": 3109,
       "error": "超时"
     },
     {
@@ -1125,7 +1129,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3112,
+      "ms": 3111,
       "error": "超时"
     },
     {
@@ -1136,7 +1140,7 @@
         "180.101.50.249"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 50,
+      "ms": 47,
       "error": ""
     },
     {
@@ -1144,7 +1148,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3113,
+      "ms": 3111,
       "error": "超时"
     },
     {
@@ -1152,7 +1156,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3116,
+      "ms": 3113,
       "error": "超时"
     },
     {
@@ -1160,7 +1164,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3110,
+      "ms": 3107,
       "error": "超时"
     },
     {
@@ -1171,7 +1175,7 @@
         "110.242.70.69"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 7,
+      "ms": 4,
       "error": ""
     },
     {
@@ -1179,7 +1183,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3102,
+      "ms": 3104,
       "error": "超时"
     },
     {
@@ -1189,7 +1193,7 @@
         "14.215.182.75"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 59,
+      "ms": 60,
       "error": ""
     },
     {
@@ -1197,7 +1201,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3114,
+      "ms": 3111,
       "error": "超时"
     },
     {
@@ -1205,7 +1209,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3102,
+      "ms": 3109,
       "error": "超时"
     },
     {
@@ -1213,7 +1217,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3102,
+      "ms": 3108,
       "error": "超时"
     },
     {
@@ -1221,7 +1225,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3102,
+      "ms": 3109,
       "error": "超时"
     },
     {
@@ -1229,7 +1233,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 75,
+      "ms": 83,
       "error": "NoNameservers: All nameservers failed to answer the query cloudnproxy.n.shifen.com. IN A: Server Do53:203.142.100.18@53 answered REFUSED"
     },
     {
@@ -1237,7 +1241,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3102,
+      "ms": 3101,
       "error": "超时"
     },
     {
@@ -1248,7 +1252,7 @@
         "110.242.70.69"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 290,
+      "ms": 474,
       "error": ""
     },
     {
@@ -1256,7 +1260,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3102,
+      "ms": 3109,
       "error": "超时"
     },
     {
@@ -1264,7 +1268,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3107,
+      "ms": 3100,
       "error": "超时"
     },
     {
@@ -1272,7 +1276,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3106,
+      "ms": 3112,
       "error": "超时"
     },
     {
@@ -1295,7 +1299,7 @@
         "36.155.169.188"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 192,
+      "ms": 99,
       "error": ""
     },
     {
@@ -1303,7 +1307,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3100,
+      "ms": 3109,
       "error": "超时"
     },
     {
@@ -1311,7 +1315,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3108,
+      "ms": 3111,
       "error": "超时"
     },
     {
@@ -1319,7 +1323,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3108,
+      "ms": 3112,
       "error": "超时"
     },
     {
@@ -1327,7 +1331,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3102,
+      "ms": 3112,
       "error": "超时"
     },
     {
@@ -1335,7 +1339,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3109,
+      "ms": 3113,
       "error": "超时"
     },
     {
@@ -1343,7 +1347,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3108,
+      "ms": 3112,
       "error": "超时"
     },
     {
@@ -1351,7 +1355,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3108,
+      "ms": 3110,
       "error": "超时"
     },
     {
@@ -1359,7 +1363,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 59,
+      "ms": 64,
       "error": "NoNameservers: All nameservers failed to answer the query cloudnproxy.n.shifen.com. IN A: Server Do53:211.137.82.4@53 answered REFUSED"
     },
     {
@@ -1367,7 +1371,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3109,
+      "ms": 3113,
       "error": "超时"
     },
     {
@@ -1375,7 +1379,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3107,
+      "ms": 3110,
       "error": "超时"
     },
     {
@@ -1383,7 +1387,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3102,
+      "ms": 3112,
       "error": "超时"
     },
     {
@@ -1391,7 +1395,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3108,
+      "ms": 3112,
       "error": "超时"
     },
     {
@@ -1399,7 +1403,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3108,
+      "ms": 3111,
       "error": "超时"
     },
     {
@@ -1407,7 +1411,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3101,
+      "ms": 3110,
       "error": "超时"
     },
     {
@@ -1415,7 +1419,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3107,
+      "ms": 3111,
       "error": "超时"
     },
     {
@@ -1423,7 +1427,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3108,
+      "ms": 3112,
       "error": "超时"
     },
     {
@@ -1431,7 +1435,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3108,
+      "ms": 3112,
       "error": "超时"
     },
     {
@@ -1439,7 +1443,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3107,
+      "ms": 3111,
       "error": "超时"
     },
     {
@@ -1447,7 +1451,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3107,
+      "ms": 3111,
       "error": "超时"
     },
     {
@@ -1455,7 +1459,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3109,
+      "ms": 3110,
       "error": "超时"
     },
     {
@@ -1463,7 +1467,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3110,
+      "ms": 3112,
       "error": "超时"
     },
     {
@@ -1471,7 +1475,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3108,
+      "ms": 3112,
       "error": "超时"
     },
     {
@@ -1479,7 +1483,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3108,
+      "ms": 3110,
       "error": "超时"
     },
     {
@@ -1487,7 +1491,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3109,
+      "ms": 3110,
       "error": "超时"
     },
     {
@@ -1510,7 +1514,7 @@
         "36.155.169.188"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 275,
+      "ms": 446,
       "error": ""
     },
     {
@@ -1518,7 +1522,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3100,
+      "ms": 3110,
       "error": "超时"
     },
     {
@@ -1526,7 +1530,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3115,
+      "ms": 3111,
       "error": "超时"
     },
     {
@@ -1534,7 +1538,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3115,
+      "ms": 3109,
       "error": "超时"
     },
     {
@@ -1550,7 +1554,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3102,
+      "ms": 3112,
       "error": "超时"
     },
     {
@@ -1558,7 +1562,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3102,
+      "ms": 3113,
       "error": "超时"
     },
     {
@@ -1566,7 +1570,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3107,
+      "ms": 3109,
       "error": "超时"
     },
     {
@@ -1574,7 +1578,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3106,
+      "ms": 3111,
       "error": "超时"
     },
     {
@@ -1582,7 +1586,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3107,
+      "ms": 3112,
       "error": "超时"
     },
     {
@@ -1590,7 +1594,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3116,
+      "ms": 3112,
       "error": "超时"
     },
     {
@@ -1598,7 +1602,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3113,
+      "ms": 3112,
       "error": "超时"
     },
     {
@@ -1606,7 +1610,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3117,
+      "ms": 3115,
       "error": "超时"
     },
     {
@@ -1622,7 +1626,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3105,
+      "ms": 3100,
       "error": "超时"
     },
     {
@@ -1630,7 +1634,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3108,
+      "ms": 3101,
       "error": "超时"
     },
     {
@@ -1638,7 +1642,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3106,
+      "ms": 3113,
       "error": "超时"
     },
     {
@@ -1646,7 +1650,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3111,
+      "ms": 3101,
       "error": "超时"
     },
     {
@@ -1654,7 +1658,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3115,
+      "ms": 3113,
       "error": "超时"
     },
     {
@@ -1677,7 +1681,7 @@
         "36.155.169.188"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 107,
+      "ms": 301,
       "error": ""
     },
     {
@@ -1685,7 +1689,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3102,
+      "ms": 3108,
       "error": "超时"
     },
     {
@@ -1693,7 +1697,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3102,
+      "ms": 3108,
       "error": "超时"
     },
     {
@@ -1701,7 +1705,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3102,
+      "ms": 3109,
       "error": "超时"
     },
     {
@@ -1709,7 +1713,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3101,
+      "ms": 3107,
       "error": "超时"
     },
     {
@@ -1717,7 +1721,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3103,
+      "ms": 3108,
       "error": "超时"
     },
     {
@@ -1725,7 +1729,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3103,
+      "ms": 3106,
       "error": "超时"
     },
     {
@@ -1733,7 +1737,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3109,
+      "ms": 3111,
       "error": "超时"
     },
     {
@@ -1741,7 +1745,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3108,
+      "ms": 3112,
       "error": "超时"
     },
     {
@@ -1749,7 +1753,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3102,
+      "ms": 3108,
       "error": "超时"
     },
     {
@@ -1757,7 +1761,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3101,
+      "ms": 3109,
       "error": "超时"
     },
     {
@@ -1765,7 +1769,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3103,
+      "ms": 3113,
       "error": "超时"
     },
     {
@@ -1773,7 +1777,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3103,
+      "ms": 3110,
       "error": "超时"
     },
     {
@@ -1781,7 +1785,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3115,
+      "ms": 3110,
       "error": "超时"
     },
     {
@@ -1789,7 +1793,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3102,
+      "ms": 3107,
       "error": "超时"
     },
     {
@@ -1797,7 +1801,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3102,
+      "ms": 3108,
       "error": "超时"
     },
     {
@@ -1805,7 +1809,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3108,
+      "ms": 3104,
       "error": "超时"
     },
     {
@@ -1813,7 +1817,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3109,
+      "ms": 3104,
       "error": "超时"
     },
     {
@@ -1821,7 +1825,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3109,
+      "ms": 3104,
       "error": "超时"
     },
     {
@@ -1832,7 +1836,7 @@
         "110.242.70.69"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 86,
+      "ms": 80,
       "error": ""
     },
     {
@@ -1855,7 +1859,7 @@
         "36.155.169.188"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 315,
+      "ms": 187,
       "error": ""
     },
     {
@@ -1863,7 +1867,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3101,
+      "ms": 3109,
       "error": "超时"
     },
     {
@@ -1871,7 +1875,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3102,
+      "ms": 3101,
       "error": "超时"
     },
     {
@@ -1879,7 +1883,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3115,
+      "ms": 3111,
       "error": "超时"
     },
     {
@@ -1887,7 +1891,7 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3103,
+      "ms": 3110,
       "error": "超时"
     },
     {
@@ -1895,23 +1899,26 @@
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3115,
+      "ms": 3114,
       "error": "超时"
     },
     {
       "dns": "61.132.163.68",
-      "ok": false,
-      "ips": [],
-      "cname": "",
-      "ms": 3115,
-      "error": "超时"
+      "ok": true,
+      "ips": [
+        "180.101.50.208",
+        "180.101.50.249"
+      ],
+      "cname": "cloudnproxy.n.shifen.com.",
+      "ms": 64,
+      "error": ""
     },
     {
       "dns": "61.139.2.69",
       "ok": false,
       "ips": [],
       "cname": "",
-      "ms": 3109,
+      "ms": 3103,
       "error": "超时"
     },
     {
@@ -1934,7 +1941,7 @@
         "36.155.169.188"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 453,
+      "ms": 363,
       "error": ""
     },
     {
@@ -1945,7 +1952,7 @@
         "110.242.70.69"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 528,
+      "ms": 245,
       "error": ""
     },
     {
@@ -1968,7 +1975,7 @@
         "36.155.169.188"
       ],
       "cname": "cloudnproxy.n.shifen.com.",
-      "ms": 956,
+      "ms": 556,
       "error": ""
     }
   ]

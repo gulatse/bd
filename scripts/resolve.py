@@ -18,7 +18,9 @@ cloudnproxy 节点自动解析器
 from __future__ import annotations
 
 import argparse
+import base64
 import concurrent.futures as futures
+import hashlib
 import json
 import os
 import re
@@ -298,6 +300,27 @@ def build_nodes(records, geo):
     return list(groups.values())
 
 
+def v2rayn_link(outbound: dict, remarks: str) -> str:
+    """生成 v2rayN 的 v2rayn://outbound/<base64url> 分享链接。
+
+    v2rayN 用它自己的 InnerFmt 解析：
+      payload = ProfileItem 序列化结果，其中 CustomOutboundObj 装 outbound 本体
+      ConfigType = 13 (Outbound)、ConfigVersion = 4、CoreType = 24 (sing_box)
+      base64url 编码（无 padding）
+    """
+    payload = {
+        "IndexId": f"baidu-{hashlib.md5(remarks.encode('utf-8')).hexdigest()[:12]}",
+        "ConfigType": 13,
+        "ConfigVersion": 4,
+        "CoreType": 24,
+        "Remarks": remarks,
+        "CustomOutboundObj": outbound,
+    }
+    raw = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
+    b64 = base64.urlsafe_b64encode(raw.encode("utf-8")).decode("ascii").rstrip("=")
+    return f"v2rayn://outbound/{b64}"
+
+
 def dns_label(dns_ip: str, name_map: dict[str, list[str]]) -> str:
     names = name_map.get(dns_ip) or []
     if names:
@@ -356,27 +379,32 @@ def write_outputs(outdir: str, domain: str, dns_results, records, geo, nodes, na
 
     # sing-box outbounds：直接能用，带百度直连的 header（只输出探测通过的）
     outbounds = []
+    links = []
     for i, n in enumerate(nodes):
         if n.get("alive") is False:
             continue
         raw = f"baidu-{n['region']}-{n['isp']}"
         tag = re.sub(r"[^\w\u4e00-\u9fff-]+", "-", raw, flags=re.UNICODE).strip("-")
         tag = tag[:60]
-        outbounds.append(
-            {
-                "type": "http",
-                "tag": tag,
-                "server": n["ip"],
-                "server_port": 443,
-                "headers": {
-                    "Host": [BAIDU_HOST_HEADER],
-                    "X-T5-Auth": [BAIDU_AUTH],
-                    "User-Agent": [BAIDU_UA],
-                },
-            }
-        )
+        body = {
+            "type": "http",
+            "server": n["ip"],
+            "server_port": 443,
+            "headers": {
+                "Host": [BAIDU_HOST_HEADER],
+                "X-T5-Auth": [BAIDU_AUTH],
+                "User-Agent": [BAIDU_UA],
+            },
+        }
+        outbounds.append({"type": "http", "tag": tag, **body})
+        # v2rayN 的「自定义远端站」：tag 由 v2rayN 自己填，这里不带
+        links.append(v2rayn_link(body, f"百度直连 {n['region']} {n['isp']}"))
     with open(os.path.join(outdir, "singbox-outbounds.json"), "w", encoding="utf-8") as fh:
         json.dump(outbounds, fh, ensure_ascii=False, indent=2)
+
+    # v2rayN 分享链接：一行一个，直接全选复制进 v2rayN 批量导入
+    with open(os.path.join(outdir, "v2rayn-links.txt"), "w", encoding="utf-8") as fh:
+        fh.write("\n".join(links) + ("\n" if links else ""))
 
     # 完整可跑的 sing-box 配置：自带 inbound / DNS / 选择组 / 路由
     srss = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "srss")
@@ -524,6 +552,14 @@ def write_outputs(outdir: str, domain: str, dns_results, records, geo, nodes, na
         md.append(
             f"| {i} | {n['region']} | {n['isp']} | `{n['ip']}` | {mark} | {n['asn']} | {extra} | {srcs} |"
         )
+    md.append("")
+    md.append("## v2rayN 分享链接")
+    md.append("")
+    md.append("一行一个，全选复制到 v2rayN「从剪贴板导入」即可。")
+    md.append("")
+    md.append("```")
+    md.extend(links)
+    md.append("```")
     md.append("")
     with open(os.path.join(outdir, "nodes.md"), "w", encoding="utf-8") as fh:
         fh.write("\n".join(md))

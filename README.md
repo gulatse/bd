@@ -35,11 +35,35 @@ baidu-direct/
 │   └── srss/geosite-cn.srs         # 给生成的 sing-box 配置用的规则集
 └── output/                         # 生成物（Action 会自动提交）
     ├── nodes.json                  # 完整数据
-    ├── nodes.md                    # 人看的表格（含存活标记）
+    ├── nodes.md                    # 人看的表格（含存活标记 + 分享链接）
+    ├── v2rayn-links.txt            # v2rayn:// 链接，一行一个，直接批量导入
     ├── singbox-outbounds.json      # sing-box 出站数组
     ├── singbox-config.json         # 完整可跑的 sing-box 配置
     ├── clash-config.yaml           # 完整可跑的 Clash / mihomo 配置
     └── clash-proxies.yaml          # 只有 Clash 代理节点
+```
+
+## v2rayN 链接
+
+`output/v2rayn-links.txt` —— 一行一个 `v2rayn://outbound/<base64url>`，
+全选复制到 v2rayN 的「从剪贴板导入」就行，每个节点一条，备注自带地区和运营商。
+
+链接里装的是 v2rayN 的 `ProfileItem`：
+
+```json
+{
+  "ConfigType": 13,          // Outbound
+  "ConfigVersion": 4,
+  "CoreType": 24,            // sing_box
+  "Remarks": "百度直连 江苏 南京 China Telecom (Chinanet JS)",
+  "CustomOutboundObj": { "type": "http", "server": "180.101.50.208", ... }
+}
+```
+
+`scripts/verify_links.py` 会按 v2rayN 的 `InnerFmt.ResolveSingle` 规则逐条校验：
+
+```bash
+python scripts/verify_links.py output/v2rayn-links.txt
 ```
 
 ## 三种核心怎么选
