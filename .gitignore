@@ -6,3 +6,4 @@ run.log
 *.bak
 run.txt
 cache.db
+chk.txt
