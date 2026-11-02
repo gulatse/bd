@@ -229,7 +229,7 @@
         "tag": "geosite-cn",
         "type": "local",
         "format": "binary",
-        "path": "C:\\Users\\xjh37\\Desktop\\baidu-direct\\data\\srss\\geosite-cn.srs"
+        "path": "/home/runner/work/bd/bd/data/srss/geosite-cn.srs"
       }
     ],
     "default_domain_resolver": {
