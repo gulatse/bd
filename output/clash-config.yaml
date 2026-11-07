@@ -33,22 +33,6 @@ proxies:
       Host: "ascdn.baidu.com"
       X-T5-Auth: "1951164069"
       User-Agent: "okhttp/3.11.0 SP-engine/2.71.0 Dalvik/2.1.0 (Linux; U; Android 9; HMA-AL00 Build/PQ3B.190801.002) baiduboxapp/13.33.0.11 (Baidu; P1 9)"
-  - name: "江苏 南京 China Unicom Jiangsu Province Network"
-    type: http
-    server: 153.3.237.117
-    port: 443
-    headers:
-      Host: "ascdn.baidu.com"
-      X-T5-Auth: "1951164069"
-      User-Agent: "okhttp/3.11.0 SP-engine/2.71.0 Dalvik/2.1.0 (Linux; U; Android 9; HMA-AL00 Build/PQ3B.190801.002) baiduboxapp/13.33.0.11 (Baidu; P1 9)"
-  - name: "江苏 苏州市 China Unicom Jiangsu Province Network"
-    type: http
-    server: 157.0.146.158
-    port: 443
-    headers:
-      Host: "ascdn.baidu.com"
-      X-T5-Auth: "1951164069"
-      User-Agent: "okhttp/3.11.0 SP-engine/2.71.0 Dalvik/2.1.0 (Linux; U; Android 9; HMA-AL00 Build/PQ3B.190801.002) baiduboxapp/13.33.0.11 (Baidu; P1 9)"
   - name: "广东 广州市 China Unicom CHINA169 Guangdong Network"
     type: http
     server: 163.177.17.189
@@ -96,8 +80,6 @@ proxy-groups:
     proxies:
       - "河北省 承德市 China Unicom Hebei Province Network"
       - "广东 广州市 Chinanet (Chinanet GD)"
-      - "江苏 南京 China Unicom Jiangsu Province Network"
-      - "江苏 苏州市 China Unicom Jiangsu Province Network"
       - "广东 广州市 China Unicom CHINA169 Guangdong Network"
       - "江苏 南京 China Telecom (Chinanet JS)"
       - "广东 广州市 China Mobile communications corporation (China Mobile Communications Group Co., Ltd)"
